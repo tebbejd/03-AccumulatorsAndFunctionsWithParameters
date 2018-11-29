@@ -10,14 +10,14 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              The top left of the screen
+#              Upper left corner
 #
 #        -- In what direction on the screen
 #           does the positive X-axis point?
@@ -45,27 +45,27 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #               ellipse and rectangle
 #
 #          -- Write the names of three METHODs that Circle objects have:
-#               move by
+#               move_by
 #               clone
-#               move center to
+#               move_center_to
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle
 #             objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                center radius, fill_color
 #
 #     f. What does a RoseWindow RENDER method do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#           refreshes window and shows shapes
 #
 #     g. When is a RoseWindow close_on_mouse_click method call
 #        necessary?  Why?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            So that the user is able to view the window before it closes
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
 #
 #   When you are confident that you have written correct answers
 #   to the above questions (ASK QUESTIONS AS NEEDED!),
-#   change the above TODO to DONE.
+#   change the above DONE to DONE.
 #
 ###############################################################################
 
@@ -139,7 +139,6 @@ def example3():
     circle = rg.Circle(center_point, radius)
     circle.fill_color = 'green'
     circle.attach_to(window)
-    circle.
     # ------------------------------------------------------------------
     # Rectangle: needs two opposite corners.
     # ------------------------------------------------------------------
